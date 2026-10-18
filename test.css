@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box; /* מודל הקופסה - כולל פאדינג ומסגרת בתוך הרוחב הכללי */
 }
+
+:root {
+  --background-dark: #0e0e13;
+  --fott-head-dark:#09090E;
+  --gray: #635D66;
+  --dark-blue: #15111E;
+  --blue: #13191F;
+  --background-red: #27111B;
+  --red: #701423;
+  --green: #0E3E22;
+  --background-green: #062316;
+  --background-gold: #44320F; 
+  /* 088121 */
+  --gold: #947324;
+}
