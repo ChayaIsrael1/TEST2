@@ -6,78 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/test.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&
     icon_names=shield,circle,electric_bolt,keyboard_arrow_left,keyboard_arrow_right,travel,vital_signs,sensors,docs,help" />
-    <header>
-        <button class="material-symbols-outlined">shield</button>
-        <p>SIGINIT OPS</p>
-        <button> <span class="material-symbols-outlined">circle </span> SECURE <span
-                class="material-symbols-outlined">circle </span> ONLINE</button>
-    </header>
-    <main>
-        <section>
-            <figure>
-<div class='radar'>
-  <div class='sweep'></div>
-</div>  
-          </figure>
-            <p>24</p>
-            <p>ACTIVE SIGHNALS</p>
-            <p>07</p>
-            <p>PRIORITY ALERTS</p>
-        </section>
-        <section>
-            <button><span class="material-symbols-outlined">electric_bolt </span>New Berif</button>
-            <button><span class="material-symbols-outlined">keyboard_arrow_left,keyboard_arrow_right
-                </span>Decode</button>
-            <button><span class="material-symbols-outlined">travel </span>Request Drone</button>
-        </section>
-        <section>
-            <article>
-                <p>CRITICAL</p>
-                <p>In Progress</p>
-                <p>Operation Nightfall</p>
-                <progress id="file1" max="100" value="65">65%</progress>
-                <label for="file1">65%</label>
-            </article>
-            <article>
-                <p>HIGH</p>
-                <p>Analyzing</p>
-                <p>Signal Interceppt Alpha</p>
-                <progress id="file2" max="100" value="40">40%</progress>
-                <label for="file2">40%</label>
-            </article>
-            <article>
-                <p>MEDIUM</p>
-                <p>Pending</p>
-                <p>Asset Recovery</p>
-                <progress id="file3" max="100" value="15">15%</progress>
-                <label for="file3">15%</label>
-            </article>
-            <article>
-                <p>HIGH</p>
-                <p>Active</p>
-                <p>Cyber Defence Grid</p>
-                <progress id="file4" max="100" value="80">80%</progress>
-                <label for="file4">80%</label>
-            </article>
-        </section>
-        <section>
-            <span class="material-symbols-outlined">circle </span>
-            <p></p>
-            <p>THREAT DETECTED</p>
-        </section>
-    </main>
+
+<body>
+    <div id="page">
+        <header>
+            <button class="material-symbols-outlined">shield</button>
+            <p>SIGINIT OPS</p>
+            <button> <span class="material-symbols-outlined">circle </span> SECURE <span
+                    class="material-symbols-outlined">circle </span> ONLINE</button>
+        </header>
+        <main>
+            <section id="theradar">
+                <figure>
+                    <div class='radar'>
+                        <div class='sweep'></div>
+                    </div>
+                </figure>
+                <div id="texterea">
+                    <p>24</p>
+                    <p>ACTIVE SIGHNALS</p>
+                    <p>07</p>
+                    <p>PRIORITY ALERTS</p>
+                </div>
+            </section>
+            <section id="buttons">
+                <button id = "b1" class="buttons"><span class=" material-symbols-outlined">electric_bolt </span>New Berif</button>
+                <button class="buttons"><span class="material-symbols-outlined ">keyboard_arrow_left</span>Decode</button>
+                <button class="buttons"><span class="material-symbols-outlined ">travel </span>Request Drone</button>
+            </section>
+            <section id = "art">
+                <article id ="a1">
+                    <p class="risk">CRITICAL</p>
+                    <p class="method">In Progress</p>
+                    <p class="name">Operation Nightfall</p>
+                    <div class="po">
+                    <progress id="file1" max="100" value="65">65%</progress>
+                    <label for="file1">65%</label>
+                    </div>
+                </article>
+                <article id ="a2">
+                    <p class="risk">HIGH</p>
+                    <p class="method">Analyzing</p>
+                    <p class="name">Signal Interceppt Alpha</p>
+                    <div class="po">
+                    <progress id="file2" max="100" value="40">40%</progress>
+                    <label for="file2">40%</label>
+                    </div>
+                </article>
+                <article id ="a3">
+                    <p class="risk">MEDIUM</p>
+                    <p class="method">Pending</p>
+                    <p class="name">Asset Recovery</p>
+                    <div class="po">
+                    <progress id="file3" max="100" value="15">15%</progress>
+                    <label for="file3">15%</label>
+                    </div>
+                </article>
+                <article id ="a4">
+                    <p class="risk">HIGH</p>
+                    <p class="method">Active</p>
+                    <p class="name">Cyber Defence Grid</p>
+                    <div class="po">
+                    <progress id="file4" max="100" value="80">80%</progress>
+                    <label for="file4">80%</label>
+                    </div>
+                </article>
+            </section>
+            <section id = "final">
+                <span class="material-symbols-outlined dot">circle </span>
+                <p id = "finaltext">THREAT DETECTED</p>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <nav>
-            <a href=""><span class="material-symbols-outlined">vital_signs </span>Dashboard</a>
+            <div>
+            <span class="material-symbols-outlined">vital_signs</span>
+            <a href="">Dashboard</a>
+            </div>
             <a href=""><span class="material-symbols-outlined">sensors </span>Feed</a>
             <a href=""><span class="material-symbols-outlined">docs </span>Berif</a>
-            <a href=""><span class="material-symbols-outlined">help </span></a>
         </nav>
+            <button class="material-symbols-outlined help">help </button>
     </footer>
-    </body>
+</body>
 
 </html>
