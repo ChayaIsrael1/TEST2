@@ -5,24 +5,24 @@
 }
 
 :root {
-  --background-dark: #0e0e13;
+  --background-dark: #0E0E12;
   --fott-head-dark:#09090E;
   --gray: #635D66;
   --dark-blue: #15111E;
   --blue: #13191F;
   --background-red: #27111B;
   --red: #701423;
-  --green: #0E3E22;
+  --green: #088121;
+  --light-green: #139f2f;
   --background-green: #062316;
   --background-gold: #44320F; 
-  /* 088121 */
   --gold: #947324;
 }
 
 body {
     height: 100vh;
     width: 100vw;
-    /* background-color: var(--background-dark); */
+    background-color: var(--background-dark);
 }
 
 header {
@@ -31,6 +31,33 @@ header {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
+    border-bottom: 1px solid var(--gray);
+}
+
+#hb {
+    background-color: var(--green);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+#hb:hover {
+    background-color: var(--light-green);
+    border: 2px solid var(--light-green);
+    box-shadow: 4px var(--light-green);
+}
+#s_o:hover {
+    background-color: var(--light-green);
+}
+#s_o {
+    border: 1px solid var(--green);
+    background-color: var(--background-green);
+    border-radius: 40%;
+    color: var(--green);
+    padding: 3px;
+}
+
+#t {
+    color: var(--green);
+    margin-top: 7px;
 }
 
 #theradar {
@@ -44,6 +71,11 @@ header {
     margin-top: 2%;
     border-radius: 20px;
 }
+
+#theradar:hover {
+    border: 2px solid var(--green);
+}
+
 #texterea {
     position: absolute;
         top: 30%;
@@ -91,6 +123,21 @@ position: absolute;
     color: white;
 }
 
+.buttons:nth-child(1):hover {
+        border: 2px solid var(--green);
+    background-color: var(--background-green);
+}
+
+.buttons:nth-child(2):hover {
+        border: 2px solid var(--green);
+    background-color: var(--background-green);
+}
+.buttons:nth-child(3):hover {
+        border: 2px solid var(--green);
+    background-color: var(--background-green);
+}
+
+
 .material-symbols-outlined {
 font-size:xx-small;
 margin-right: 5px;
@@ -121,8 +168,23 @@ padding-left: 7px;
 padding-top: 4px;
 } 
 
+article:nth-child(1):hover{
+        border: 2px solid var(--green);
+}
+article:nth-child(2):hover{
+        border: 2px solid var(--green);
+}
+article:nth-child(3):hover{
+        border: 2px solid var(--green);
+}
+article:nth-child(4):hover{
+        border: 2px solid var(--green);
+}
+
 progress {
     width: 70%;
+    background-color: var(--green);
+    border-radius: 40%;
 }
 .risk {
 grid-area: a;
@@ -150,6 +212,11 @@ grid-area: d;
     margin-top: 2%;
     border-radius: 20px;
 }
+
+#final:hover {
+ background-color: rgb(205, 59, 59);
+}
+
 .dot {
     position: absolute;
     left: 1%;
@@ -165,6 +232,7 @@ grid-area: d;
 }
 
 footer {
+    border-top: 1 solid var(--gray);
     position: relative;
     margin-top: 3%;
 }
@@ -181,4 +249,8 @@ nav {
     left: 95%;
     background-color: var(--gray);
     color: white;
+}
+
+.l {
+    
 }
